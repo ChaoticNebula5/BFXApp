@@ -5,103 +5,221 @@
 	android:id="@+id/constraint_layout_constraint_layout"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@color/google_pixel44_xl3_activity_constraint_layout_constraint_layout_background_color">
+	android:background="@color/map_activity_constraint_layout_constraint_layout_background_color">
 
 	<ImageView
-		android:id="@+id/scroll_group1_image_view"
+		android:id="@+id/image2_image_view"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="@dimen/google_pixel44_xl3_activity_scroll_group1_image_view_margin_bottom"
-		android:layout_marginEnd="@dimen/google_pixel44_xl3_activity_scroll_group1_image_view_margin_end"
-		android:layout_marginStart="@dimen/google_pixel44_xl3_activity_scroll_group1_image_view_margin_start"
+		android:layout_marginEnd="@dimen/map_activity_image2_image_view_margin_end"
 		android:scaleType="centerCrop"
-		android:src="@drawable/scroll_group_1"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintHorizontal_weight="1.98"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		tools:layout_editor_absoluteX="-128dp"
-		tools:layout_editor_absoluteY="898dp"/>
-
-	<ImageView
-		android:id="@+id/image3_image_view"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginEnd="@dimen/google_pixel44_xl3_activity_image3_image_view_margin_end"
-		android:layout_marginStart="@dimen/google_pixel44_xl3_activity_image3_image_view_margin_start"
-		android:scaleType="centerCrop"
-		android:src="@drawable/image_3"
+		android:src="@drawable/image_2"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintHorizontal_weight="1.19"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:layout_editor_absoluteX="-20dp"
+		tools:layout_editor_absoluteX="0dp"
 		tools:layout_editor_absoluteY="0dp"/>
 
-	<View
-		android:id="@+id/rectangle8_constraint_layout"
+	<ImageView
+		android:id="@+id/fancymapsmap_image_view"
 		android:layout_width="0dp"
-		android:layout_height="@dimen/google_pixel44_xl3_activity_rectangle8_constraint_layout_height"
-		android:layout_marginEnd="@dimen/google_pixel44_xl3_activity_rectangle8_constraint_layout_margin_end"
-		android:layout_marginStart="@dimen/google_pixel44_xl3_activity_rectangle8_constraint_layout_margin_start"
-		android:background="@drawable/google_pixel44_xl3_activity_rectangle8_constraint_layout_background"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintHorizontal_weight="1.04"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/map_activity_fancymapsmap_image_view_margin_top"
+		android:scaleType="centerCrop"
+		android:src="@drawable/fancymapsmap"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/rectangle2_constraint_layout"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="137dp"/>
+
+	<View
+		android:id="@+id/rectangle2_constraint_layout"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/map_activity_rectangle2_constraint_layout_height"
+		android:layout_marginTop="@dimen/map_activity_rectangle2_constraint_layout_margin_top"
+		android:background="@drawable/map_activity_rectangle2_constraint_layout_background"
+		app:layout_constraintHorizontal_weight="1"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:layout_editor_absoluteX="-11dp"
-		tools:layout_editor_absoluteY="-229dp"/>
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="53dp"/>
+
+	<TextView
+		android:id="@+id/corruption_activitie_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/map_activity_corruption_activitie_text_view_margin_top"
+		android:gravity="center"
+		android:letterSpacing="-0.01"
+		android:text="@string/map_activity_corruption_activitie_text_view_text"
+		android:textColor="#0E0101"
+		android:textSize="@dimen/map_activity_corruption_activitie_text_view_text_size"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_editor_absoluteX="73dp"
+		tools:layout_editor_absoluteY="62dp"/>
+
+	<Button
+		android:id="@+id/view_button"
+		android:layout_width="@dimen/map_activity_view_button_width"
+		android:layout_height="@dimen/map_activity_view_button_height"
+		android:layout_marginStart="@dimen/map_activity_view_button_margin_start"
+		android:layout_marginTop="@dimen/map_activity_view_button_margin_top"
+		android:background="@drawable/map_activity_view_button_ripple"
+		android:gravity="center"
+		android:text="@string/map_activity_view_button_text"
+		android:textColor="@color/map_activity_view_button_text_color"
+		android:textSize="@dimen/map_activity_view_button_text_size"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/image8_image_view"
+		tools:layout_editor_absoluteX="-7dp"
+		tools:layout_editor_absoluteY="446dp"/>
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/view_constraint_layout"
+		android:layout_width="@dimen/map_activity_view_constraint_layout_width"
+		android:layout_height="@dimen/map_activity_view_constraint_layout_height"
+		android:layout_marginStart="@dimen/map_activity_view_constraint_layout_margin_start"
+		android:layout_marginTop="@dimen/map_activity_view_constraint_layout_margin_top"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/rectangle2_constraint_layout"
+		tools:layout_editor_absoluteX="91dp"
+		tools:layout_editor_absoluteY="267dp">
+	
+		<LinearLayout
+			android:id="@+id/rectangle4_button"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/map_activity_rectangle4_button_height"
+			android:background="@drawable/map_activity_rectangle4_button_ripple"
+			android:gravity="center"
+			android:orientation="horizontal"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintHorizontal_weight="1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteX="0dp"
+			tools:layout_editor_absoluteY="0dp"
+			style="@style/Widget.AppCompat.Button">
+		
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/map_activity_rectangle4_button_text"
+				android:textColor="@color/map_activity_rectangle4_button_text_color"
+				android:textSize="@dimen/map_activity_rectangle4_button_text_size"/>
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/map_activity_rectangle4_button_image_padding"
+				android:src="@drawable/image_10"/>
+		</LinearLayout>
+	</android.support.constraint.ConstraintLayout>
+
+	<Button
+		android:id="@+id/view_two_button"
+		android:layout_width="@dimen/map_activity_view_two_button_width"
+		android:layout_height="@dimen/map_activity_view_two_button_height"
+		android:layout_marginEnd="@dimen/map_activity_view_two_button_margin_end"
+		android:layout_marginTop="@dimen/map_activity_view_two_button_margin_top"
+		android:background="@drawable/map_activity_view_two_button_ripple"
+		android:gravity="center"
+		android:text="@string/map_activity_view_two_button_text"
+		android:textColor="@color/map_activity_view_two_button_text_color"
+		android:textSize="@dimen/map_activity_view_two_button_text_size"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/view_constraint_layout"
+		tools:layout_editor_absoluteX="213dp"
+		tools:layout_editor_absoluteY="385dp"/>
+
+	<Button
+		android:id="@+id/view_three_button"
+		android:layout_width="@dimen/map_activity_view_three_button_width"
+		android:layout_height="@dimen/map_activity_view_three_button_height"
+		android:layout_marginBottom="@dimen/map_activity_view_three_button_margin_bottom"
+		android:layout_marginStart="@dimen/map_activity_view_three_button_margin_start"
+		android:background="@drawable/map_activity_view_three_button_ripple"
+		android:gravity="center"
+		android:text="@string/map_activity_view_three_button_text"
+		android:textColor="@color/map_activity_view_three_button_text_color"
+		android:textSize="@dimen/map_activity_view_three_button_text_size"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		tools:layout_editor_absoluteX="21dp"
+		tools:layout_editor_absoluteY="721dp"/>
+
+	<Button
+		android:id="@+id/view_four_button"
+		android:layout_width="@dimen/map_activity_view_four_button_width"
+		android:layout_height="@dimen/map_activity_view_four_button_height"
+		android:layout_marginTop="@dimen/map_activity_view_four_button_margin_top"
+		android:background="@drawable/map_activity_view_four_button_ripple"
+		android:gravity="center"
+		android:text="@string/map_activity_view_four_button_text"
+		android:textColor="@color/map_activity_view_four_button_text_color"
+		android:textSize="@dimen/map_activity_view_four_button_text_size"
+		app:layout_constraintRight_toLeftOf="@+id/image14_image_view"
+		app:layout_constraintTop_toBottomOf="@+id/image13_image_view"
+		tools:layout_editor_absoluteX="135dp"
+		tools:layout_editor_absoluteY="603dp"/>
 
 	<ImageView
-		android:id="@+id/image11_image_view"
+		android:id="@+id/image8_image_view"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="@dimen/google_pixel44_xl3_activity_image11_image_view_margin_bottom"
-		android:layout_marginEnd="@dimen/google_pixel44_xl3_activity_image11_image_view_margin_end"
+		android:layout_marginStart="@dimen/map_activity_image8_image_view_margin_start"
+		android:layout_marginTop="@dimen/map_activity_image8_image_view_margin_top"
 		android:scaleType="center"
-		android:src="@drawable/image_11"
+		android:src="@drawable/image_8"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/view_constraint_layout"
+		tools:layout_editor_absoluteX="122dp"
+		tools:layout_editor_absoluteY="385dp"/>
+
+	<ImageView
+		android:id="@+id/image13_image_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/map_activity_image13_image_view_margin_end"
+		android:layout_marginTop="@dimen/map_activity_image13_image_view_margin_top"
+		android:scaleType="center"
+		android:src="@drawable/image_13"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/view_two_button"
+		tools:layout_editor_absoluteX="199dp"
+		tools:layout_editor_absoluteY="446dp"/>
+
+	<ImageView
+		android:id="@+id/image14_image_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/map_activity_image14_image_view_margin_end"
+		android:layout_marginTop="@dimen/map_activity_image14_image_view_margin_top"
+		android:scaleType="center"
+		android:src="@drawable/image_14"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/view_two_button"
+		tools:layout_editor_absoluteX="318dp"
+		tools:layout_editor_absoluteY="603dp"/>
+
+	<ImageView
+		android:id="@+id/image16_image_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/map_activity_image16_image_view_margin_bottom"
+		android:layout_marginEnd="@dimen/map_activity_image16_image_view_margin_end"
+		android:scaleType="center"
+		android:src="@drawable/image_16"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
-		tools:layout_editor_absoluteX="151dp"
-		tools:layout_editor_absoluteY="703dp"/>
-
-	<TextView
-		android:id="@+id/mgnrega_faces_the_ch_text_view"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginEnd="@dimen/google_pixel44_xl3_activity_mgnrega_faces_the_ch_text_view_margin_end"
-		android:layout_marginStart="@dimen/google_pixel44_xl3_activity_mgnrega_faces_the_ch_text_view_margin_start"
-		android:layout_marginTop="@dimen/google_pixel44_xl3_activity_mgnrega_faces_the_ch_text_view_margin_top"
-		android:gravity="center"
-		android:letterSpacing="-0.04"
-		android:lineSpacingMultiplier="0.96"
-		android:text="@string/google_pixel44_xl3_activity_mgnrega_faces_the_ch_text_view_text"
-		android:textColor="#0E0101"
-		android:textSize="@dimen/google_pixel44_xl3_activity_mgnrega_faces_the_ch_text_view_text_size"
-		app:layout_constraintHorizontal_weight="1.02"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		tools:layout_editor_absoluteX="-5dp"
-		tools:layout_editor_absoluteY="27dp"/>
-
-	<TextView
-		android:id="@+id/the_governm_text_view"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="@dimen/google_pixel44_xl3_activity_the_governm_text_view_margin_start"
-		android:layout_marginTop="@dimen/google_pixel44_xl3_activity_the_governm_text_view_margin_top"
-		android:fontFamily="@font/font_timesnewromanpsmt"
-		android:gravity="center"
-		android:letterSpacing="-0.04"
-		android:lineSpacingMultiplier="0.96"
-		android:text="@string/google_pixel44_xl3_activity_the_governm_text_view_text"
-		android:textColor="#0E0101"
-		android:textSize="@dimen/google_pixel44_xl3_activity_the_governm_text_view_text_size"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		tools:layout_editor_absoluteX="3dp"
-		tools:layout_editor_absoluteY="148dp"/>
+		tools:layout_editor_absoluteX="223dp"
+		tools:layout_editor_absoluteY="721dp"/>
 </android.support.constraint.ConstraintLayout>
