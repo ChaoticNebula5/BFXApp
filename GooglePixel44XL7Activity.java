@@ -32,10 +32,10 @@ public class GooglePixel44XL7Activity extends AppCompatActivity {
 	
 	private void init() {
 	
-		// Configure Nirav Modi Case. PNB component
+		
 		niravModiCasePnbTextView = this.findViewById(R.id.nirav_modi_case_pnb_text_view);
 		
-		// Configure Money laundering: component
+		
 		moneyLaunderingTextView = this.findViewById(R.id.money_laundering_text_view);
 	}
 }
